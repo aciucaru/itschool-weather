@@ -1,0 +1,82 @@
+body
+{
+    width: 1280px;
+    height: 960px;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+/* bacground for 'content-credits' page */
+.credits-background-img
+{
+    position: absolute;
+    width: 1280px;
+    height: 960px;
+
+    background-image: url("./../images/clouds-sky-white.jpg");
+    background-repeat: no-repeat;
+    background-attachment: local; /* sa nu fie 'fixed', 'fixed' fixeaza imaginea de tot viewport-ul!*/
+    background-position: center center;
+    background-origin: border-box;
+    background-clip: border-box;
+
+    z-index: 1;
+    transition: all 2s ease;
+}
+
+.credits-container
+{
+    position: absolute;
+    width: 640px;
+
+    left: 320px; 
+    top: 50px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+
+    padding: 20px;
+    margin: 0px;
+
+    border: solid 1px hsl(0, 0%, 22%);
+    border-radius: 10px;
+
+    z-index: 100;
+}
+
+.info-text
+{
+    font-size: 14px;
+    color:hsl(0, 0%, 7%);
+}
+
+.credits-link,
+.credits-link:link,
+.credits-link:visited,
+.credits-link:active
+{
+    font-size: 14px;
+    color:hsl(0, 0%, 7%);
+    text-decoration: none;
+
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px;
+
+    border: solid 1px hsla(0, 0%, 0%, 0);
+    border-radius: 5px;
+}
+
+.credits-link:hover
+{
+    color:hsl(0, 0%, 100%);
+    /* text-decoration: underline; */
+
+    border: solid 1px hsl(203, 30%, 50%);
+    box-shadow: inset 0px 0px 4px 2px hsla(0, 0%, 100%, 0.6);
+}

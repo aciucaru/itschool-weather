@@ -1,0 +1,9 @@
+.glass-effect
+{
+    background-color: hsla(203, 100%, 85%, 0.5);
+    box-shadow: inset 0px 0px 4px 2px hsla(0, 0%, 100%, 0.6);
+    /* box-shadow: inset 0px 0px 4px 2px hsla(0, 0%, 100%, 0.6); */
+
+    /* filter: blur(3px); */ /* este gresit, corect este: backdrop-filter: blur(3px) */
+    backdrop-filter: blur(8px);
+}

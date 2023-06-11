@@ -1,0 +1,79 @@
+.top-corner-container
+{
+    position: fixed; 
+    width: 220px;
+    height: min-content;
+
+    top: 0px;
+    left: 1030px;
+    /* right: 20px; */
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 0px;
+    
+    padding: 0px;
+    margin: 0px;
+
+    /* border: solid 1px hsl(0, 0%, 22%); */
+
+    z-index: 100;
+}
+
+.it-school-link
+{
+    padding: 5px;
+    margin: 0px;
+
+    border-bottom-left-radius: 8px;
+
+    /* border: solid 1px hsl(203, 30%, 50%); */
+    border: solid 1px hsl(0, 0%, 22%);
+    box-shadow: inset 0px 0px 4px 2px hsla(0, 0%, 100%, 0.6);
+}
+
+.it-school-link:hover
+{
+    background-color: hsla(230, 30%, 10%, 0.2);
+}
+
+.contents-credits-link-container
+{
+    width: fit-content;
+    text-align: center;
+
+    padding: 5px;
+    padding-top: 10px;
+    margin: 0px;
+
+    border-bottom-right-radius: 8px;
+
+    /* border: solid 1px hsl(203, 30%, 50%); */
+    border: solid 1px hsl(0, 0%, 22%);
+    box-shadow: inset 0px 0px 4px 2px hsla(0, 0%, 100%, 0.6);
+}
+
+.contents-credits-link-container:hover
+{
+    background-color: hsla(230, 30%, 10%, 0.2);
+}
+
+.content-credits-link,
+.content-credits-link:link,
+.content-credits-link:visited,
+.content-credits-link:active
+{
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color:hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+.content-credits-link:hover
+{
+    color:hsl(0, 0%, 46%);
+    text-decoration: underline;
+}

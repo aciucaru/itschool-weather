@@ -1,0 +1,133 @@
+:root
+{
+    --weather-day-font-size: 16px;
+
+    --weather-time-interval-font-size: 15px;
+    --weather-description-font-size: 14px;
+}
+
+#all-days-weather-forecast-container
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+
+    padding: 0px;
+    margin: 0px;
+    margin-top: 30px;
+
+    z-index: 100;
+}
+
+.one-day-weather-forecast-container
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0px;
+
+    padding: 10px;
+    margin: 0px;
+
+    border-radius: 10px;
+
+    border: solid 1px hsl(0, 0%, 22%);
+
+    z-index: 100;
+}
+
+.id-weather-forecast-param-day-name
+{
+    color:black;
+    text-align: center;
+    margin: 10px;
+}
+
+.weather-forecast-interval
+{
+    border: solid 1px hsl(0, 0%, 65%);
+}
+
+.id-night-interval
+{
+    background-color: hsla(230, 30%, 10%, 0.2);
+}
+
+.id-night-interval:hover
+{
+    background-color: hsla(230, 30%, 10%, 0.4);
+}
+
+.id-morning-interval
+{
+    background-color: hsla(210, 20%, 50%, 0.2);
+}
+
+.id-morning-interval:hover
+{
+    background-color: hsla(210, 20%, 50%, 0.5);
+}
+
+.id-afternoon-interval
+{
+    background-color: hsla(230, 30%, 10%, 0.2);
+}
+
+.id-afternoon-interval:hover
+{
+    background-color: hsla(230, 30%, 10%, 0.4);
+}
+
+.id-evening-interval
+{
+    background-color: hsla(210, 20%, 50%, 0.2);
+}
+
+.id-evening-interval:hover
+{
+    background-color: hsla(210, 20%, 50%, 0.5);
+}
+
+.weather-forecast-container
+{
+    width: 180px;
+    height: 90px;
+    display: grid;
+    grid-template-columns: 64px 100px;
+    grid-template-rows: 24px 40px;
+    justify-items: center; /* along X axis */
+    align-items: start; /* along Y axis */
+    justify-content: start;
+    align-content: stretch;
+    gap: 5px;
+
+    padding: 5px;
+    margin: 0px;
+}
+
+.weather-forecast-time-interval
+{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    font-size: var(--weather-time-interval-font-size);
+}
+
+.id-weather-forecast-icon
+{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+
+    filter: drop-shadow(5px 5px 4px hsl(0, 0%, 38%));
+}
+
+.id-weather-forecast-description
+{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+    font-size: var(--weather-param-font-size);
+}

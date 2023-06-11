@@ -1,0 +1,95 @@
+.city-selector-main-container
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+
+    background-color: hsla(0, 0%, 100%, 0);
+
+    z-index: 100;
+}
+
+.city-selector-container
+{
+    width: min-content;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+
+    padding: 5px;
+    margin: 0px;
+
+    border: solid 1px hsl(0, 0%, 22%);
+    border-bottom: none;
+
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.city-selector-button
+{
+    width: 100px;
+    overflow-x: hidden;
+
+    padding: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+
+    background-color: hsla(0, 0%, 100%, 0);
+
+    border: solid 1px hsl(203, 30%, 50%);
+    box-shadow: inset 0px 0px 4px 2px hsla(0, 0%, 100%, 0.6);
+}
+
+.city-selector-button:hover
+{
+    background-color: hsla(230, 30%, 10%, 0.2);
+}
+
+.city-selector-button-selected
+{
+    width: 100px;
+    overflow-x: hidden;
+
+    padding: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+
+    background-color: hsla(230, 30%, 10%, 0.5);
+    /* background-color: hsla(49, 64%, 27%, 0.6); */
+
+    border: solid 1px hsl(203, 30%, 50%);
+    box-shadow: inset 0px 0px 4px 2px hsla(0, 0%, 25%, 0.6);
+}
+
+.city-selector-button-selected:hover
+{
+    background-color: hsla(230, 30%, 10%, 0.3);
+
+    border: solid 1px hsl(203, 30%, 50%);
+    box-shadow: inset 0px 0px 4px 2px hsla(0, 0%, 25%, 0.4);
+}
+
+.button-left
+{
+    margin-left: 5px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.button-middle
+{
+    border-radius: 0px;
+}
+
+.button-right
+{
+    margin-right: 5px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}

@@ -1,0 +1,149 @@
+:root
+{
+    --weather-city-font-size: 16px;
+
+    --weather-description-font-size: 15px;
+
+    --weather-param-font-size: 14px;
+}
+
+#all-cities-current-weather-container
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+
+    padding: 10px;
+    margin: 0px;
+
+    border: solid 1px hsl(0, 0%, 22%);
+    border-radius: 10px;
+
+    z-index: 100;
+}
+
+.id-city-current-weather-container
+{
+    width: 200px;
+    height: 280px;
+    display: grid;
+    grid-template-columns: 50px 50px 70px;
+    grid-template-rows: 20px 80px 40px 32px 20px 20px;
+    justify-items: center; /* along X axis */
+    align-items: start; /* along Y axis */
+    justify-content: center;
+    align-content: stretch;
+    gap: 10px;
+
+    padding: 5px;
+    margin: 0px;
+
+    border-radius: 10px;
+
+    border: solid 1px hsl(203, 30%, 50%);
+    box-shadow: inset 0px 0px 4px 2px hsla(0, 0%, 100%, 0.6);
+}
+
+.id-city-current-weather-container:hover
+{
+    background-color: hsla(230, 30%, 10%, 0.2);
+}
+
+.id-current-weather-city-name, .weather-time-interval
+{
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+
+    font-size: var(--weather-city-font-size);
+}
+
+.id-current-weather-icon
+{
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+
+    filter: drop-shadow(5px 5px 4px hsl(0, 0%, 38%));
+}
+
+.id-current-weather-description
+{
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    font-size: var(--weather-description-font-size);
+}
+
+.current-weather-temperature-logo
+{
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;  
+
+    content: url('../images/hot.png');
+}
+
+.id-current-weather-temperature-label
+{
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;  
+
+    font-size: var(--weather-param-font-size);
+}
+
+.id-current-weather-temperature
+{
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;  
+
+    font-size: var(--weather-param-font-size);
+}
+
+.current-weather-humidity-logo
+{
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;  
+
+    content: url('../images/humidity.png');
+}
+
+.id-current-weather-humidity-label
+{
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;  
+
+    font-size: var(--weather-param-font-size);
+}
+
+.id-current-weather-humidity
+{
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;  
+
+    font-size: var(--weather-param-font-size);
+}
+
+.current-weather-windspeed-logo
+{
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;  
+
+    content: url('../images/wind.png');
+}
+
+.id-current-weather-windspeed-label
+{
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;  
+
+    font-size: var(--weather-param-font-size);
+}
+
+.id-current-weather-windspeed
+{
+    grid-column: 3 / 4;
+    grid-row: 6 / 7;  
+
+    font-size: var(--weather-param-font-size);
+}
+
+

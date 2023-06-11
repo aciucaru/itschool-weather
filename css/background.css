@@ -1,0 +1,111 @@
+body
+{
+    width: 1280px;
+    height: 960px;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.background-img-container
+{
+    margin: 0px;
+}
+
+#background-img-back
+{
+    position: absolute;
+    width: 1280px;
+    height: 960px;
+
+    background-repeat: no-repeat;
+    background-attachment: local; /* sa nu fie 'fixed', 'fixed' fixeaza imaginea de tot viewport-ul!*/
+    background-position: center center;
+    background-origin: border-box;
+    background-clip: border-box;
+
+    z-index: 1;
+    transition: all 2s ease;
+}
+
+#background-img-front
+{
+    position: absolute;
+    width: 1280px;
+    height: 960px;
+
+    background-repeat: no-repeat;
+    background-attachment: local; /* sa nu fie 'fixed', 'fixed' fixeaza imaginea de tot viewport-ul!*/
+    background-position: center center;
+    background-origin: border-box;
+    background-clip: border-box;
+
+    opacity: 1;
+    z-index: 2;
+
+    transition: all 2s ease;
+}
+
+.cities-container
+{
+    position: absolute; 
+    width: 1200px;
+    height: 880px;
+
+    top: 40px;
+    left: 40px;
+
+    z-index: 100;
+
+    background-color: hsla(0, 0%, 100%, 0);
+}
+
+.bg-image-Bucharest
+{
+    background-image: url("./../images/bucuresti-cc-05-1280-960-nume.jpg");
+}
+
+.bg-image-Botosani
+{
+    background-image: url("./../images/botosani-cc-01-1280x960-nume.jpg");
+}
+
+.bg-image-Brasov
+{
+    background-image: url("./../images/brasov-cc-01-1280x960-nume.jpg");
+}
+
+.bg-image-Braila
+{
+    background-image: url("./../images/braila-cc-01-1280x960-nume.jpg");
+}
+
+.bg-image-Craiova
+{
+    background-image: url("./../images/craiova-cc-02-1280x960-nume.jpg");
+}
+
+.bg-image-Cluj
+{
+    background-image: url("./../images/cluj-cc-01-1280x960-nume.jpg");
+}
+
+.bg-image-Oradea
+{
+    background-image: url("./../images/oradea-cc-02-1280-960-nume.jpg");
+}
+
+.bg-image-Pitesti
+{
+    background-image: url("./../images/pitesti-cc-01-1280x960-nume.jpg");
+}
+
+.bg-image-Sibiu
+{
+    background-image: url("./../images/sibiu-cc-01-1280x960-nume.jpg");
+}
+
+.bg-image-Timisoara
+{
+    background-image: url("./../images/timisoara-cc-01-1280x960-nume.jpg");
+}
