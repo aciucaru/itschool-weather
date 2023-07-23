@@ -1,4 +1,4 @@
-const API_KEY = '55cf8f52447ec73f5b49ed16c0efc264';
+const API_KEY = '****';
 
 function getCurrentWeatherEndpoint(cityName)
 {
